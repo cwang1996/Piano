@@ -24,8 +24,8 @@ body {
 }
 
 .white {
-    width: 7%;
-    height: 45%;
+    min-width: 7%;
+    min-height: 45%;
     background-color: #fff;
     border: 1px solid #ccc;
     z-index: 1;
@@ -39,11 +39,11 @@ body {
 }
 
 .black {
-    width: 4%;
-    height: 30%;
+    min-width: 4%;
+    min-height: 30%;
     background-color: #111;
     border: 1px solid #ccc;
-    margin-top: -135px;
+    margin-top: -145px;
     z-index: 2;
     margin-left: -2%;
     margin-right: -2%;
@@ -68,4 +68,47 @@ body {
     color: #404040;
     line-height: 1.5;
     letter-spacing: 0.2em;
+}
+
+@media only screen and (max-width: 520px) {
+    .title {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 210px;
+    }
+    
+    .header {
+        font-family: helvetica, arial, sans-serif;
+        font-size: 50px;
+        color: #404040;
+        line-height: 1.5;
+        letter-spacing: 0.2em;
+        text-align: center;
+    }
+
+    .black {
+        min-width: 4%;
+        min-height: 30%;
+        background-color: #111;
+        border: 1px solid #ccc;
+        margin-top: -135px;
+        z-index: 2;
+        margin-left: -2%;
+        margin-right: -2%;
+        cursor: pointer;
+        border-radius: 4px;
+    }
+
+    .white {
+        min-width: 9%;
+        min-height: 45%;
+        background-color: #fff;
+        border: 1px solid #ccc;
+        z-index: 1;
+        cursor: pointer;
+        box-shadow: 0px 12px #111;
+        border-radius: 4px;
+    }
+    
 }
