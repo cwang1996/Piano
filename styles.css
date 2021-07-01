@@ -10,17 +10,21 @@ body {
     background: linear-gradient(#77a1d3, #79cbca, #e684ae);
     background-position: center;
     background-repeat: no-repeat;
-    height: 100vh;
+    height: 100%
+}
+
+html {
+    height: 100%;
 }
 
 #container {
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 100%;
-    height: 100%;
+    max-width: 1500px;
+    height: 1050px;
     padding-bottom: 150px;
-    margin-top: -90px;
+    margin: 0 auto;
 }
 
 .white {
@@ -60,6 +64,10 @@ body {
     justify-content: center;
     align-items: center;
     margin-top: 210px;
+    max-width: 1500px;
+    margin: 0 auto;
+    margin-top: 150px;
+    white-space: nowrap;
 }
 
 .header {
@@ -88,7 +96,7 @@ body {
     }
 
     .black {
-        min-width: 4%;
+        min-width: 20px;
         min-height: 30%;
         background-color: #111;
         border: 1px solid #ccc;
@@ -101,7 +109,7 @@ body {
     }
 
     .white {
-        min-width: 9%;
+        min-width: 10%;
         min-height: 45%;
         background-color: #fff;
         border: 1px solid #ccc;
